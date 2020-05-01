@@ -905,6 +905,12 @@ handle_configuration_variable()
     default_edit_at)
       DEFAULT_EDIT_AT="$2"
       ;;
+    default_copy_to)
+      DEFAULT_COPY_TO="$2"
+      ;;
+    default_copy_from)
+      DEFAULT_COPY_FROM="$2"
+      ;;
   esac
 }
 
@@ -924,6 +930,8 @@ default_command=$DEFAULT_COMMAND
 default_show_at=$DEFAULT_SHOW_AT
 default_add_at=$DEFAULT_ADD_AT
 default_edit_at=$DEFAULT_EDIT_AT
+default_copy_from=$DEFAULT_COPY_FROM
+default_copy_to=$DEFAULT_COPY_TO
 " > "$CONFIG_FILE"
 }
 
